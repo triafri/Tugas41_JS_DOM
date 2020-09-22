@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS - DOM</title>
+</head>
+<body>
+	<p>Pilih Warna Background</p>
+	<select id="mySelect" onchange="myFunction()">
+		<option value="red">Merah</option>
+		<option value="blue">Biru</option>
+		<option value="yellow">Kuning</option>
+		<option value="white">Putih</option>
+	</select>
+
+	<p id="tes">Saat Kamu Memilih Warna, Background Akan Berubah</p>
+
+	<script type="text/javascript">
+		function myFunction(){
+			var x = document.getElementById("mySelect").value;
+			document.body.style.backgroundColor = x;
+
+		}
+	</script>
+</body>
+</html>
